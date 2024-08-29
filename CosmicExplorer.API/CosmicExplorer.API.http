@@ -1,4 +1,4 @@
-@CosmicExplorer.API_HostAddress = http://localhost:5189
+@CosmicExplorer.API_HostAddress = https://localhost:7129
 
 GET {{CosmicExplorer.API_HostAddress}}/weatherforecast/
 Accept: application/json

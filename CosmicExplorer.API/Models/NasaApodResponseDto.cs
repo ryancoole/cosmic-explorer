@@ -11,7 +11,7 @@ namespace CosmicExplorer.API.Models
         public string Explanation { get; set; }
 
         [SwaggerSchema(Description = "URL of the high-definition version of the image")]
-        public string HdUrl { get; set; }
+        public string Hdurl { get; set; }
 
         [SwaggerSchema(Description = "The media type, e.g., image or video")]
         public string MediaType { get; set; }
@@ -22,5 +22,7 @@ namespace CosmicExplorer.API.Models
         [SwaggerSchema(Description = "Title of the APOD image")]
         public string Title { get; set; }
 
+        [SwaggerSchema(Description = "URL of the image or video")]
+        public string Url { get; set; }
     }
 }

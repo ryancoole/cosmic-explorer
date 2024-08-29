@@ -1,0 +1,110 @@
+html {
+  font-size: 14px;
+
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #121212;
+    color: #e0e0e0;
+    background-image: url('/images/cosmic-background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(31, 31, 31, 0.8); /* Semi-transparent background for navbar */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #e0e0e0;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff;
+}
+
+.footer {
+    background-color: rgba(31, 31, 31, 0.8); /* Semi-transparent background for footer */
+}
+
+p, h1, h2 {
+    color: #e0e0e0;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-image: url('/images/cosmic-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.dark-mode .navbar {
+    background-color: rgba(31, 31, 31, 0.8);
+}
+
+.dark-mode .footer {
+    background-color: rgba(31, 31, 31, 0.8);
+}
+
+/* Additional styling for the content */
+.container {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly opaque background for better readability */
+    border-radius: 8px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-image: url('/images/cosmic-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.dark-mode .navbar {
+    background-color: rgba(31, 31, 31, 0.9); /* Darker background for navbar in dark mode */
+}
+
+.dark-mode .navbar .navbar-brand,
+.dark-mode .navbar .nav-link {
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar .nav-link.active {
+    color: #ffffff;
+}
+
+.dark-mode .footer {
+    background-color: rgba(31, 31, 31, 0.9); /* Darker background for footer in dark mode */
+}
+
+/* Optional: Change icon color for better visibility in dark mode */
+.dark-mode #darkModeIcon {
+    color: #f39c12; /* Example color for sun icon */
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}

@@ -1,0 +1,36 @@
+﻿@*
+Views/Home/Index.cshtml
+*@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <!-- Animated Header -->
+    <h1 class="display-4 animated-header">Welcome to Cosmic Explorer</h1>
+    <p class="lead">Embark on a journey through the cosmos with Cosmic Explorer, your gateway to the wonders of the universe. Find a captivating blend of stunning imagery, insightful data, and interactive features designed to bring the beauty and mystery of space right to your fingertips.</p>
+</div>
+
+<!-- Additional Section for Features -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="feature-box text-center">
+                <h2 class="feature-title">NASA's Astronomy Picture of the Day</h2>
+                <p>Experience the universe through high-resolution images and detailed explanations <a href="@Url.Action("Index", "NasaApod")">HERE</a>.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box text-center">
+                <h2 class="feature-title">Daily Updates</h2>
+                <p>Stay updated with daily astronomical phenomena and cosmic events.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box text-center">
+                <h2 class="feature-title">Interactive Experience</h2>
+                <p>Engage with interactive content and visualizations to deepen your understanding.</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿@model CosmicExplorer.UI.Models.NasaApodResponseDto
+
+@*
+Views/NasaApod/Index.cshtml
+*@
+@{
+    ViewData["Title"] = "NASA APOD";
+}
+
+<div class="container">
+    <h1 class="mb-20 mt-20" style="text-align:center;">@Model.Title (@Model.Date)</h1>
+    @if (!string.IsNullOrEmpty(Model.Hdurl))
+    {
+        <img src="@Model.Hdurl" alt="@Model.Title HD" class="img-fluid mb-20" />
+    }
+    else
+    {
+        <img src="@Model.Url" alt="@Model.Title" class="img-fluid mb-20" />
+    }
+    <p>@Model.Explanation</p>
+</div>
